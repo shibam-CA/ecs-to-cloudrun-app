@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello from Cloud Run! Migrated from AWS ECS."
+    return "Hello from Cloud Run! Successfully migrated from AWS ECS. CI/CD Pipeline working!"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
